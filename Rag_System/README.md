@@ -77,10 +77,8 @@ cp .env.example .env
 | 必填变量 | 说明 |
 |----------|------|
 | `DASHSCOPE_API_KEY` | 阿里云 DashScope API Key |
-| `ALIBABA_CLOUD_ACCESS_KEY_ID` | 阿里云 AccessKey ID（OSS） |
-| `ALIBABA_CLOUD_ACCESS_KEY_SECRET` | 阿里云 AccessKey Secret（OSS） |
-| `OSS_BUCKET` | OSS Bucket 名称 |
 | `PG_HOST` / `PG_USER` / `PG_PASSWORD` | PostgreSQL 连接信息 |
+| `MILVUS_HOST` | Milvus 连接地址 |
 
 ### 3. 安装依赖并启动后端
 
@@ -132,7 +130,7 @@ graph LR
 | LLM / Embedding / Rerank | 阿里云 DashScope（Qwen 系列） |
 | 向量数据库 | Milvus Standalone |
 | 业务数据库 | PostgreSQL |
-| 对象存储 | 阿里云 OSS |
+| 对象存储 | 本地文件系统（可选 OSS） |
 | 前端 | Vue 3 + Vite + Element Plus |
 
 ---
