@@ -1,0 +1,58 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+
+# ── 环境变量（含密钥，绝对不能提交）──
+.env
+
+# ── LangGraph 运行时数据 ──
+.langgraph_api/
+.langgraph/
+
+# ── 前端依赖和构建产物 ──
+node_modules/
+dist/
+
+# ── Docker 数据卷 ──
+volumes/
+
+# ── 日志 ──
+*.log
+logs/
+
+# ── IDE ──
+.idea/
+.vscode/
+.vs/
+*.swp
+*.swo
+
+# ── Python 测试/覆盖率 ──
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# ── 内部文档（不对外公开）──
+ARCHITECTURE.md
+MD阅读/
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── Claude AI 配置文件 ──
+.claude/
+
+# ── 本地文件存储 ──
+local_storage/
+
+# ── 项目元数据 ──
+.kiro/
